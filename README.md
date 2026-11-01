@@ -1,24 +1,24 @@
-# Wolt Partner Stats 🚴‍♂️📊
+# Wolt Partner Stats
 
 A modern, minimalist, 100% offline Android application designed for **Wolt couriers** in Denmark to track their daily and monthly shifts, gross earnings, tips, hours, and delivery efficiency in Danish Krone (`kr.`).
 
 ---
 
-## ✨ Features
+## Features
 
-- **📱 Offline Room Database:** 100% local storage. Your data remains private, secure, and accessible without internet connection.
-- **📸 Wolt Screenshot OCR Scanner:** Seamlessly import shifts directly from Wolt courier app screenshots using Google ML Kit on-device text recognition.
-- **⚡ Quick Manual Shift Logging:** Log shifts in seconds — start/end time, number of orders, base pay, and tips (`kr.`).
-- **💰 Earnings & Tips Breakdown:** Clear distinction between base courier fee and customer tips with real-time totals.
-- **📈 Comprehensive Reports & Analytics:**
+- **Offline Room Database:** 100% local storage. Your data remains private, secure, and accessible without an internet connection.
+- **Wolt Screenshot OCR Scanner:** Seamlessly import shifts directly from Wolt courier app screenshots using Google ML Kit on-device text recognition.
+- **Quick Manual Shift Logging:** Log shifts in seconds — start/end time, number of orders, base pay, and tips (`kr.`).
+- **Earnings & Tips Breakdown:** Clear distinction between base courier fee and customer tips with real-time totals.
+- **Comprehensive Reports & Analytics:**
   - **Monthly View:** Filter and browse shift statistics by month with quick navigation (`‹` `›`).
   - **All-Time View:** Aggregate historical metrics across all logged shifts.
   - **Efficiency Metrics:** Income per hour (`kr./h`), income per order (`kr.`), average shift duration, and orders delivered.
-- **🎨 Minimalist Dark Wolt Theme:** Sleek dark-mode interface with Wolt Cyan accents, custom full-bleed vector adaptive launcher icons, and minimalist outline line navigation.
+- **Minimalist Dark Wolt Theme:** Sleek dark-mode interface with Wolt Cyan accents, custom full-bleed vector adaptive launcher icons, and minimalist outline line navigation.
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## Tech Stack & Architecture
 
 - **Language:** [Kotlin 2.0+](https://kotlinlang.org/)
 - **UI Toolkit:** [Jetpack Compose](https://developer.android.com/jetpack/compose) with Material 3
@@ -30,7 +30,7 @@ A modern, minimalist, 100% offline Android application designed for **Wolt couri
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Android Studio Ladybug | 2024.2.1 or newer
@@ -42,8 +42,8 @@ A modern, minimalist, 100% offline Android application designed for **Wolt couri
 Clone the repository and build the debug APK:
 
 ```bash
-git clone https://github.com/klebash/Wolt-Tracker.git
-cd Wolt-Tracker
+git clone https://github.com/klebash/WoltTrackerApp.git
+cd WoltTrackerApp
 ./gradlew assembleDebug
 ```
 
@@ -59,6 +59,6 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
