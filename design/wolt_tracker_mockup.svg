@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 412 915" width="412" height="915" style="background-color: #0B0F17; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="profitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00A082" />
+      <stop offset="100%" stop-color="#006653" />
+    </linearGradient>
+    <linearGradient id="woltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00C2E8" />
+      <stop offset="100%" stop-color="#008BB4" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A2232" />
+      <stop offset="100%" stop-color="#131A26" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00C2E8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#00C2E8" stop-opacity="0" />
+    </linearGradient>
+    <!-- Shadows -->
+    <filter id="cardShadow" x="-10%" y="-5%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+    <filter id="profitShadow" x="-10%" y="-5%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#00A082" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="412" height="915" fill="#0B0F17" />
+  <rect width="412" height="280" fill="url(#glowGrad)" />
+
+  <!-- 1. Android Status Bar -->
+  <g id="StatusBar">
+    <text x="28" y="34" fill="#E2E8F0" font-size="14" font-weight="600" letter-spacing="0.2">14:35</text>
+    <!-- Icons (Wifi, Signal, Battery) -->
+    <g transform="translate(330, 22)" fill="#CBD5E1">
+      <!-- Signal -->
+      <path d="M1 11h2v-2H1v2zm4 0h2v-4H5v4zm4 0h2v-6H9v6zm4 0h2V3h-2v8z"/>
+      <!-- Wifi -->
+      <path d="M22 4.5a11 11 0 00-11 0l1.2 1.5a9 9 0 018.6 0L22 4.5zm-2.4 3a7.5 7.5 0 00-6.2 0l1.2 1.5a5.5 5.5 0 013.8 0L19.6 7.5zM17.2 10.5a4 4 0 00-1.4 0l1.4 1.8 1.4-1.8a4 4 0 00-1.4 0z"/>
+      <!-- Battery -->
+      <path d="M32 4h-1V2.5a.5.5 0 00-.5-.5h-2a.5.5 0 00-.5.5V4h-1a1 1 0 00-1 1v8a1 1 0 001 1h5a1 1 0 001-1V5a1 1 0 00-1-1zm-.5 8.5h-4v-7h4v7z"/>
+    </g>
+  </g>
+
+  <!-- 2. Top App Bar -->
+  <g id="TopAppBar" transform="translate(20, 52)">
+    <!-- App Status Indicator -->
+    <circle cx="12" cy="20" r="6" fill="#10B981" />
+    <circle cx="12" cy="20" r="10" fill="#10B981" fill-opacity="0.25" />
+
+    <!-- Title -->
+    <text x="32" y="26" fill="#FFFFFF" font-size="20" font-weight="700" letter-spacing="-0.3">WoltTracker</text>
+
+    <!-- "+ Νέα" Button -->
+    <g id="BtnNew" transform="translate(286, 2)" style="cursor: pointer;">
+      <rect width="86" height="38" rx="19" fill="url(#woltGrad)" />
+      <text x="43" y="24" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle">+ Νέα</text>
+    </g>
+  </g>
+
+  <!-- 3. Date Header -->
+  <g id="DateBanner" transform="translate(20, 116)">
+    <rect width="372" height="38" rx="12" fill="#141D2B" stroke="#1F2C40" stroke-width="1" />
+    <text x="14" y="24" font-size="14">📅</text>
+    <text x="38" y="24" fill="#94A3B8" font-size="13" font-weight="500">Σήμερα:</text>
+    <text x="94" y="24" fill="#F1F5F9" font-size="13" font-weight="600">Σάββατο, 31 Οκτωβρίου</text>
+  </g>
+
+  <!-- 4. Hero Card: ΚΑΘΑΡΟ ΚΕΡΔΟΣ -->
+  <g id="HeroProfitCard" transform="translate(20, 172)" filter="url(#profitShadow)">
+    <rect width="372" height="156" rx="24" fill="url(#profitGrad)" />
+
+    <!-- Card Header -->
+    <g transform="translate(24, 28)">
+      <circle cx="14" cy="10" r="14" fill="#FFFFFF" fill-opacity="0.2" />
+      <text x="14" y="15" font-size="14" text-anchor="middle">💰</text>
+      <text x="38" y="15" fill="#E6FFFA" font-size="13" font-weight="700" letter-spacing="1">ΚΑΘΑΡΟ ΚΕΡΔΟΣ</text>
+    </g>
+
+    <!-- Big Net Profit Value -->
+    <text x="186" y="98" fill="#FFFFFF" font-size="44" font-weight="800" text-anchor="middle" letter-spacing="-1">72.50 €</text>
+
+    <!-- Sub-bar (Income | Expenses) -->
+    <g transform="translate(20, 114)">
+      <rect width="332" height="32" rx="10" fill="#000000" fill-opacity="0.22" />
+      <text x="166" y="21" fill="#D1FAE5" font-size="13" font-weight="500" text-anchor="middle">
+        Έσοδα: <tspan font-weight="700" fill="#FFFFFF">85.00 €</tspan>
+        <tspan fill="#A7F3D0">  •  </tspan>
+        Έξοδα: <tspan font-weight="700" fill="#FECDD3">12.50 €</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- 5. Shift Statistics Header -->
+  <g id="StatsHeader" transform="translate(20, 356)">
+    <text x="4" y="18" font-size="16">📊</text>
+    <text x="28" y="18" fill="#F8FAFC" font-size="16" font-weight="700" letter-spacing="-0.2">Στατιστικά Βάρδιας</text>
+  </g>
+
+  <!-- 6. Metrics 2x2 Grid -->
+  <g id="MetricsGrid" transform="translate(20, 386)">
+    <!-- Metric 1: Hours -->
+    <g transform="translate(0, 0)" filter="url(#cardShadow)">
+      <rect width="178" height="76" rx="16" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="28" cy="26" r="14" fill="#00C2E8" fill-opacity="0.15" />
+      <text x="28" y="31" font-size="14" text-anchor="middle">⏱️</text>
+      <text x="50" y="24" fill="#94A3B8" font-size="11" font-weight="600">Ώρες Εργασίας</text>
+      <text x="50" y="44" fill="#FFFFFF" font-size="18" font-weight="700">5.5 <tspan font-size="13" font-weight="500" fill="#94A3B8">ώρες</tspan></text>
+    </g>
+
+    <!-- Metric 2: Orders -->
+    <g transform="translate(194, 0)" filter="url(#cardShadow)">
+      <rect width="178" height="76" rx="16" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="28" cy="26" r="14" fill="#3B82F6" fill-opacity="0.15" />
+      <text x="28" y="31" font-size="14" text-anchor="middle">📦</text>
+      <text x="50" y="24" fill="#94A3B8" font-size="11" font-weight="600">Παραγγελίες</text>
+      <text x="50" y="44" fill="#FFFFFF" font-size="18" font-weight="700">18</text>
+    </g>
+
+    <!-- Metric 3: Tips -->
+    <g transform="translate(0, 88)" filter="url(#cardShadow)">
+      <rect width="178" height="76" rx="16" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="28" cy="26" r="14" fill="#10B981" fill-opacity="0.15" />
+      <text x="28" y="31" font-size="14" text-anchor="middle">💶</text>
+      <text x="50" y="24" fill="#94A3B8" font-size="11" font-weight="600">Tips (μετρητά/app)</text>
+      <text x="50" y="44" fill="#34D399" font-size="18" font-weight="700">15.00 €</text>
+    </g>
+
+    <!-- Metric 4: Fuel / Expenses -->
+    <g transform="translate(194, 88)" filter="url(#cardShadow)">
+      <rect width="178" height="76" rx="16" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="28" cy="26" r="14" fill="#F59E0B" fill-opacity="0.15" />
+      <text x="28" y="31" font-size="14" text-anchor="middle">⛽</text>
+      <text x="50" y="24" fill="#94A3B8" font-size="11" font-weight="600">Βενζίνη / Έξοδα</text>
+      <text x="50" y="44" fill="#F87171" font-size="18" font-weight="700">12.50 €</text>
+    </g>
+  </g>
+
+  <!-- 7. Recent Entries Header -->
+  <g id="RecentHeader" transform="translate(20, 582)">
+    <text x="4" y="18" font-size="16">🕒</text>
+    <text x="28" y="18" fill="#F8FAFC" font-size="16" font-weight="700" letter-spacing="-0.2">Τελευταίες Καταχωρήσεις</text>
+    <text x="368" y="18" fill="#00C2E8" font-size="13" font-weight="600" text-anchor="end">Όλες</text>
+  </g>
+
+  <!-- 8. Recent Entries List -->
+  <g id="RecentList" transform="translate(20, 612)">
+    <!-- Item 1: Shift Entry -->
+    <g transform="translate(0, 0)" filter="url(#cardShadow)">
+      <rect width="372" height="72" rx="16" fill="#151D2A" stroke="#1E293B" stroke-width="1"/>
+
+      <!-- Time Pill -->
+      <rect x="14" y="14" width="62" height="26" rx="8" fill="#1E293B" />
+      <text x="45" y="31" fill="#00C2E8" font-size="12" font-weight="700" text-anchor="middle">14:30</text>
+
+      <!-- Title & Details -->
+      <text x="86" y="28" fill="#F1F5F9" font-size="14" font-weight="600">Βάρδια Πρωινή</text>
+      <text x="194" y="28" fill="#64748B" font-size="12" font-weight="500">(18 παραδ.)</text>
+
+      <text x="86" y="48" fill="#94A3B8" font-size="12">Έσοδα: <tspan fill="#34D399" font-weight="700">85.00 €</tspan>  <tspan fill="#64748B">|</tspan>  Tips: <tspan fill="#38BDF8" font-weight="600">15.00 €</tspan></text>
+
+      <!-- Positive indicator chevron or badge -->
+      <circle cx="346" cy="36" r="12" fill="#10B981" fill-opacity="0.15"/>
+      <path d="M343 33l4 3-4 3" stroke="#10B981" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Item 2: Expense Entry -->
+    <g transform="translate(0, 84)" filter="url(#cardShadow)">
+      <rect width="372" height="72" rx="16" fill="#151D2A" stroke="#1E293B" stroke-width="1"/>
+
+      <!-- Time Pill -->
+      <rect x="14" y="14" width="62" height="26" rx="8" fill="#1E293B" />
+      <text x="45" y="31" fill="#94A3B8" font-size="12" font-weight="700" text-anchor="middle">10:15</text>
+
+      <!-- Title & Details -->
+      <text x="86" y="28" fill="#F1F5F9" font-size="14" font-weight="600">Καφές &amp; Σνακ</text>
+      <rect x="180" y="14" width="54" height="20" rx="6" fill="#EF4444" fill-opacity="0.15" />
+      <text x="207" y="28" fill="#F87171" font-size="11" font-weight="600" text-anchor="middle">Έξοδο</text>
+
+      <text x="86" y="48" fill="#94A3B8" font-size="12">Προσωπικό έξοδο βάρδιας</text>
+
+      <!-- Expense Amount -->
+      <text x="350" y="42" fill="#F87171" font-size="16" font-weight="700" text-anchor="end">- 4.50 €</text>
+    </g>
+  </g>
+
+  <!-- 9. Modern Bottom Navigation Bar -->
+  <g id="BottomNavBar" transform="translate(0, 825)">
+    <!-- Blur / Nav Background -->
+    <rect width="412" height="90" fill="#0E141E" stroke="#1E293B" stroke-width="1"/>
+
+    <!-- Nav Item 1: Αρχική (Active) -->
+    <g transform="translate(52, 14)">
+      <circle cx="16" cy="14" r="18" fill="#00C2E8" fill-opacity="0.15" />
+      <!-- Home Icon -->
+      <path d="M16 6l-9 7.5v8.5a1 1 0 001 1h4.5v-5h7v5h4.5a1 1 0 001-1v-8.5L16 6z" fill="#00C2E8"/>
+      <text x="16" y="42" fill="#00C2E8" font-size="11" font-weight="700" text-anchor="middle">Αρχική</text>
+    </g>
+
+    <!-- Nav Item 2: Βάρδιες -->
+    <g transform="translate(142, 14)">
+      <!-- Calendar / Shift Icon -->
+      <path d="M22 6h-1V4h-2v2H11V4H9v2H8a2 2 0 00-2 2v13a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2zm0 15H8V11h14v10z" fill="#64748B"/>
+      <text x="15" y="42" fill="#94A3B8" font-size="11" font-weight="500" text-anchor="middle">Βάρδιες</text>
+    </g>
+
+    <!-- Nav Item 3: Έξοδα -->
+    <g transform="translate(236, 14)">
+      <!-- Receipt / Expense Icon -->
+      <path d="M19 3H5a2 2 0 00-2 2v14l3-2 3 2 3-2 3 2 3-2 3 2V5a2 2 0 00-2-2zm-2 10H7v-2h10v2zm0-4H7V7h10v2z" fill="#64748B"/>
+      <text x="12" y="42" fill="#94A3B8" font-size="11" font-weight="500" text-anchor="middle">Έξοδα</text>
+    </g>
+
+    <!-- Nav Item 4: Στατιστικά -->
+    <g transform="translate(324, 14)">
+      <!-- Chart Icon -->
+      <path d="M7 19h2v-6H7v6zm4 0h2v-11h-2v11zm4 0h2v-8h-2v8zm4 0h2V5h-2v14z" fill="#64748B"/>
+      <text x="14" y="42" fill="#94A3B8" font-size="11" font-weight="500" text-anchor="middle">Αναφορές</text>
+    </g>
+  </g>
+</svg>
